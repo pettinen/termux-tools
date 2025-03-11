@@ -59,12 +59,12 @@ fi
 if test "${TERMUX_PACKAGE_FORMAT+set}" = set; then
   termux_package_format="$TERMUX_PACKAGE_FORMAT"
 else
-  termux_package_format="debian"
+  termux_package_format="pacman"
 fi
 if test "${TERMUX_PACKAGE_MANAGER+set}" = set; then
   termux_package_manager="$TERMUX_PACKAGE_MANAGER"
 else
-  termux_package_manager="apt"
+  termux_package_manager="pacman"
 fi
 
 AC_DEFINE_UNQUOTED(COPYRIGHT, ["$copyright"],
